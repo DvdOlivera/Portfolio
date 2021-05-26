@@ -6,12 +6,13 @@
     <title>CV-David Olivera</title>
     
     <link rel='stylesheet' type='text/css' media='screen' href='estilo.css'>
-  
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-   
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sarpanch:wght@900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
@@ -22,15 +23,16 @@
     <header id="misopciones">
 
          <div id="fotocontenedor">
+
                 <div id="imagentexto">
-                    <div id="imagen">
+                    <div id="imagen" class="">
                         <img id="foto" src="FOTO1.jpg" alt="fotoperfil">
                     </div>
                     <div id="textocontenedor">
-                        
-                        <h1 >
+                        <div class="parpadeo title title-neon" >
                             David Olivera
-                        </h1>
+                        </div>
+                        
                         
                         
                     </div>
@@ -41,28 +43,45 @@
                
             </div>
 
-            <div id="aviso">
-                Frontend Developer Jr.
-            </div>
-
         
             <nav >
+                <div class='box-outer'>
+                    <div  class='main_box cartel-neon'>
+                
+                    <button  class="opciones"  onclick="ejecutarmiDescripcion(0)">
+                        <span class="letras-neon">
+                            Perfil
+                        </span>
+                        
+                </button>
+                  
+            </div>
+        </div>
+                
+              <div class='box-outer'>
+                <div  class='main_box cartel-neon'>
+                    <button  class="opciones" onclick="ejecutarmiDescripcion(1)">
+                        <span class="letras-neon">
+                        Contacto
+                    </span>
+                </button>
+
+                </div>
+              </div>
+               
+              <div class='box-outer'>
+                <div class='main_box cartel-neon'>
+                    <button  class="opciones" onclick="ejecutarmiDescripcion(2)">
+                        <span class="letras-neon">
+                        Proyectos
+                    </span>
+                </button>
+
+                </div>
+              </div>
                     
                 
-                    <button  class="opciones" onclick="ejecutarmiDescripcion(0)">
-                        
-                            Perfil
-                    </button>
-                    <button  class="opciones" onclick="ejecutarmiDescripcion(1)"  >
-                        
-                            Contacto
-                        
-                    </button>
-                    <button  class="opciones" onclick="ejecutarmiDescripcion(2)"  >
-                        
-                        Proyectos
                     
-                    </button>
                     
             </nav>
     
@@ -82,62 +101,62 @@
            
              
 
-            <div id="descripcion" >
+            <div  id="descripcion" >
                 <div class="descripciones" id="perfil">
-                    <P>
                         <h2 class="titulos">
                             SOBRE MÍ :
                         </h2>
                         <p class="parrafosimple">
-                        Aprendiz de desarrollo y diseño de páginas web radicado en Buenos Aires, Argentina. Estudiando de manera autodidacta y en grupo, en busca de crecer y desenvolverme en el rubro. Atento al surgimiento de nuevas tecnologías y desafíos.
+
+                        Soy un Frontend developer Jr en busqueda de nuevas experiencias. Radicado en Buenos Aires, Argentina. Estudiando de manera autodidacta y en grupo, en busca de crecer y desenvolverme en el rubro. Atento al surgimiento de nuevas tecnologías y desafíos.
                         </p>
                     
                        <h2 class="titulos">
                         FORMACIÓN :
                         </h2>  
                         <p class="parrafosimple">
-                            Clases de Desarrollo Web ( <a href="https://argentinaprograma.com/" id="link" >Proyecto r/Argentina Programa</a> )
+                            Clases de Desarrollo Web ( <a href="https://argentinaprograma.com/" class="link" >Proyecto r/Argentina Programa</a> )
                         </p>
                     
                        <h2 class="titulos">
                             TECNOLOGÍAS :
                         </h2> 
-                        <ul>
+                        <ul class="parrafosimple lista-tecno">
                             <li>
-                                <span>JavaScript ES6+</span>
+                                JavaScript ES6+
                             </li>
 
                             <li>
-                                <span>REACT.js</span>
+                                REACT.js
                             </li>
 
                             <li>
-                                <span>CSS-CSS3</span>
+                                CSS-CSS3
                             </li>
 
                             <li>
-                                <span>HTML-HTML5</span>
+                                HTML-HTML5
                             </li>
 
                             
                             <li>
-                                <span>JSX</span>
+                                JSX
                             </li>
 
                             <li>
-                                <span>Git-Github</span>
+                                Git-Github
                             </li>
 
                             <li>
-                                <span>Responsive Design </span>
+                                Responsive Design
                             </li>
 
                             <li>
-                                <span> Tailwind</span>
+                                Tailwind
                             </li>
 
                             <li>
-                                <span>RestfullAPI</span> 
+                                RestfulAPI
                             </li>
 
                         </ul> 
@@ -153,7 +172,6 @@
                                 Ingles: Intermedio
                             </li>
                         </ul>
-                    </P>
                 </div>
                 <div class="descripciones oculto"id="contacto">
                     <p >
@@ -171,7 +189,7 @@
                             +54 9 1126467553 
                         </p>
                         
-                        <button id="download" class="button_CV"><a id="cv" href="CVDavidOlivera.pdf" download="">Descargar CV</a></button>
+                        <button class="cartel-neon download_button"><a href="CVDavidOlivera.pdf" download=""><p>Descargar CV</p></a></button>
                          
                     </p>
                 </div>
@@ -195,17 +213,17 @@
                     </div>
                     <div class="accesos">
                         <a class="botonrepositorio" href="https://github.com/DvdOlivera/Project-WE-2000" target="_blank" >Ir a Repositorio</a>
-                        <a class="live" href="https://dvdolivera.github.io/Project-WE-2000/" target="_blank" >Live Demo</a>
+                        <a class="botonrepositorio" href="https://dvdolivera.github.io/Project-WE-2000/" target="_blank" >Live Demo</a>
                     </div>
 
 
-                    <div id="tamañofoto">
+                    <div class="tamañofoto">
 
                     
-                    <div id="fotoproyecto">
-                        <a id="link" href="https://dvdolivera.github.io/Project-WE-2000/"> <img id="imagenproyecto"src="WE2000.png" target="_blank" alt=""></a>
+                    <div class="fotoproyecto">
+                        <a class=" link" href="https://dvdolivera.github.io/Project-WE-2000/"> <img class=" imagenproyecto"src="WE2000.png" target="_blank" alt=""></a>
                     </div>
-                    <p id="descri" class="parrafosimple">
+                    <p class=" descri parrafosimple">
                         Proyecto de emulación de interface interactiva del Menu de Winning Eleven 2000 (Jap ver.)
                     </p>
 
@@ -220,18 +238,18 @@
                     </div>
                     <div class="accesos">
                         <a class="botonrepositorio" href="https://github.com/DvdOlivera/EasyBank" target="_blank">Ir a Repositorio</a>
-                        <a class="live" href="https://dvdolivera.github.io/EasyBank/" target="_blank" >Live Demo</a>
+                        <a class="botonrepositorio" href="https://dvdolivera.github.io/EasyBank/" target="_blank" >Live Demo</a>
                     </div>
 
                    
 
-                    <div id="tamañofoto">
+                    <div class="tamañofoto">
 
                     
-                    <div id="fotoproyecto">
-                        <a id="link" href="https://dvdolivera.github.io/EasyBank/"> <img id="imagenproyecto"src="EasyBank.png" target="_blank" alt=""></a>
+                    <div class="fotoproyecto">
+                        <a class= "link" href="https://dvdolivera.github.io/EasyBank/"> <img class="imagenproyecto"src="EasyBank.png" target="_blank" alt=""></a>
                     </div>
-                    <p id="descri" class="parrafosimple">
+                    <p class=" descri parrafosimple">
                         Proyecto de página Web Bancaria 
                     </p>
 
@@ -244,19 +262,19 @@
                     </div>
                     <div class="accesos">
                         <a class="botonrepositorio" href="https://github.com/DvdOlivera/Pokedex"target="_blank" >Ir a Repositorio</a>
-                        <a class="live" href="https://dvdolivera.github.io/Pokedex/#" target="_blank" >Live Demo</a>
+                        <a class="botonrepositorio" href="https://dvdolivera.github.io/Pokedex/#" target="_blank" >Live Demo</a>
                     </div>
 
                    
 
-                    <div id="tamañofoto">
+                    <div class="tamañofoto">
 
                     
-                    <div id="fotoproyecto">
-                        <a id="link" href="https://dvdolivera.github.io/Pokedex/#"> <img id="imagenproyecto"src="Pokedex.png" target="_blank" alt=""></a>
+                    <div class="fotoproyecto">
+                        <a class="link" href="https://dvdolivera.github.io/Pokedex/#"> <img class="imagenproyecto"src="Pokedex.png" target="_blank" alt=""></a>
                     </div>
-                    <p id="descri" class="parrafosimple">
-                        Proyecto Pokedex con Restful API
+                    <p  class=" descri parrafosimple">
+                        Proyecto Pokedex, conectado a la restfulAPI PokeApi. Tiene acceso a los datos de más de 700 pokemons.
                     </p>
 
                     </div>
@@ -268,20 +286,20 @@
                     </div>
                     <div class="accesos">
                         <a class="botonrepositorio" href="https://github.com/DvdOlivera/base-apparel-coming-soon-master" target="_blank">Ir a Repositorio</a>
-                        <a class="live" href="https://dvdolivera.github.io/base-apparel-coming-soon-master/" target="_blank" >Live Demo</a>
+                        <a class="botonrepositorio" href="https://dvdolivera.github.io/base-apparel-coming-soon-master/" target="_blank" >Live Demo</a>
                     </div>
 
 
                    
 
-                    <div id="tamañofoto">
+                    <div class="tamañofoto">
 
                     
-                    <div id="fotoproyecto">
-                        <a id="link" href="https://dvdolivera.github.io/base-apparel-coming-soon-master/"> <img id="imagenproyecto"src="BaseA.png" target="_blank" alt=""></a>
+                    <div class="fotoproyecto">
+                        <a class="link" href="https://dvdolivera.github.io/base-apparel-coming-soon-master/"> <img class="imagenproyecto"src="BaseA.png" target="_blank" alt=""></a>
                     </div>
-                    <p id="descri" class="parrafosimple">
-                        Proyecto de Loggeo en página Web. con Regular expressions
+                    <p  class=" descri parrafosimple">
+                        Proyecto de loggeo en tienda de moda exclusiva para usuarios. Incluye un sistema de validación de formularios.
                     </p>
 
                     </div>
@@ -293,17 +311,17 @@
                     </div>
                     <div class="accesos">
                         <a class="botonrepositorio" href="https://github.com/DvdOlivera/weather-app" target="_blank">Ir a Repositorio</a>
-                        <a class="live" href="https://dvdolivera.github.io/weather-app/" target="_blank" >Live Demo</a>
+                        <a class="botonrepositorio" href="https://dvdolivera.github.io/weather-app/" target="_blank" >Live Demo</a>
                     </div>
 
 
-                    <div id="tamañofoto">
+                    <div class="tamañofoto">
 
                     
-                    <div id="fotoproyecto">
-                        <a id="link" href="https://dvdolivera.github.io/weather-app/"> <img id="imagenproyecto"src="climaapp.png" target="_blank" alt=""></a>
+                    <div class="fotoproyecto">
+                        <a class="link" href="https://dvdolivera.github.io/weather-app/"> <img class="imagenproyecto"src="climaapp.png" target="_blank" alt=""></a>
                     </div>
-                    <p id="descri" class="parrafosimple">
+                    <p  class="descri parrafosimple">
                         Proyecto de app del clima con React.js y RestFul API
                     </p>
 
@@ -333,7 +351,7 @@
 <div id="contenedorfoo">
     <footer>
         <p id ="creditos">
-            Photo by Fernando Rodrigues @fw_rodrigues  <br>
+            Photo by Andre Benz @trapnation  <br>
             Hecho por David Olivera Copyright © 2021
         </p>
        

@@ -59,7 +59,6 @@ function ejecutarmiDescripcion(p) {
 
 function memoryLoad(p) {
     
-     /* pasar parametro para hacer diferentes operaciones- 1 2 3 4.. etc*/
      if (p == 0){
         
         document.querySelector("#perfil").classList.remove("oculto"); 
@@ -81,4 +80,4 @@ function memoryLoad(p) {
 
 }
 
-//AGRADECER IMAGEN DE FONDO AL FOTOGRAFO
+

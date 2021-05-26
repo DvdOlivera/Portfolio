@@ -1,7 +1,9 @@
-html{
+html, body{
     width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 body{
     width: 100%;
@@ -10,10 +12,19 @@ body{
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    background-image: url("4andre-benz-3OQ7tU0nYs0-unsplash.jpg");
+    background-image:
+        
+        linear-gradient(to bottom, rgba(255, 0, 221, 0.15), rgba(0, 132, 209, 0.18)), 
+        url("pawel-nolbert-4u2U8EO9OzY-unsplash.jpg");
     
  
 }
+
+#page-content {
+    min-height: 100%;
+}
+
+
 .parrafosimple{
     font-family: 'Fira Sans', sans-serif;
     font-weight: 300;
@@ -82,10 +93,10 @@ nav {
     flex-wrap:  nowrap;
     justify-content: center;
     align-items: center;
-    width: 300px;
+    width: 9em;
     height: 80px;
     background-color: transparent; 
-    font-size: 2.2em;  
+    font-size: calc(1em + 1vw);
     font-weight: 700;    
     font-family: 'Fugaz One';
 }
@@ -108,14 +119,6 @@ nav {
     border-color: #fff;
     border-style: solid;
     border-radius: 30px;
-    -ms-word-break: break-all;
-    word-break: break-all;
-    word-break: break-word;
-
-   -webkit-hyphens: auto;
-   -moz-hyphens: auto;
-   -ms-hyphens: auto;
-       hyphens: auto;
     font-weight: 900;
     color: honeydew;
     margin:auto;
@@ -214,25 +217,28 @@ nav {
 .contenedorproyecto{
     margin: 5%;
     display: flex;
+    align-items: center;
     flex-direction: column;
-    
+    text-align:center;
 }
+
+
 .fotoproyecto :hover{
     transition: 300ms;
     
     filter:brightness(1.0);
 }
+
 .fotoproyecto{
-    width: 50%;
-    margin:10px;
-    height: 240px;
-    width: 320px ;
-   
+    width: calc(30% + 10vw);
+    margin: 0.5em 0;
+    height: 20%;  
 }
+
 .descri{
-    padding-left: 5%;
     font-size: 25px;
     width: 50%;
+    margin-top: 0;
 }
 .imagenproyecto{
     filter:brightness(0.5);
@@ -251,17 +257,18 @@ footer{
     align-items: center;
     justify-content: center;
     text-align:center;
+    left: 0;
+    bottom: 0;
 
 }
 
-#creditos{
-   
+#creditos{  
    
     font-family: 'Poiret One', cursive;
-    font-size: 15px;
-    
+    font-size: 15px;   
     
 }
+
 #tiposdeproyectos :hover{
     color: rgb(245, 227, 63);
     opacity: 1.0;
@@ -311,12 +318,11 @@ footer{
     justify-content: center;
     align-items: center;
     width: 14em;
-    background-color: rgb(31, 233, 182);
+    background-color: rgb(206, 6, 179);
     border-radius:30px;
     font-size: 0.5em;
     text-transform: uppercase;
-    border: 2px solid;
-    border-color: #fff;
+    border:none;
     margin: 20px;
     box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.253);
     color: white;
@@ -325,7 +331,7 @@ footer{
 
     letter-spacing: 2px;
     transition: 1s;
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
 .botonrepositorio:hover{
@@ -337,12 +343,7 @@ footer{
     justify-content: center;
     
 }
-.accesos :hover{
-    transition: 400ms;
-    background-color: rgb(30, 216, 170);
-   
 
-}
 
 
 .letras-neon {
@@ -369,8 +370,8 @@ footer{
 }
 
 .cartel-neon {
-    --neon-text-color:rgb(248, 66, 66);
-    --neon-border-color:rgb(248, 66, 66);
+    --neon-text-color:rgb(206, 6, 179);
+    --neon-border-color:rgb(206, 6, 179);
   color: #fff;  
   border: 0.4rem solid #fff;
   border-radius: 2rem;

@@ -2,7 +2,7 @@
  Mi CV
 
 
-## [Live DEMO](https://dvdolivera.github.io/EasyBank/)
+## [Live DEMO](https://dvdolivera.github.io/Portfolio/)
 
 + HTML5
 + CSS3

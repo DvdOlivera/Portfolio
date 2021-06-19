@@ -222,6 +222,10 @@ nav {
     text-align:center;
 }
 
+.experiencia{
+    font-size: 20px;
+   
+}
 
 .fotoproyecto :hover{
     transition: 300ms;
